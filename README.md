@@ -1,2 +1,2 @@
 # digitalColorClock
-digital clock with color background
+digital clock and color background with JavaScript
