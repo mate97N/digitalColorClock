@@ -17,7 +17,7 @@ Released under the MIT license: http://jsbin.mit-license.org
 <style id="jsbin-css">
 * { margin: 0; padding: 0; }
 
-html, body {
+ html, body {
   height: 100%;
 }
 
@@ -25,11 +25,9 @@ html, body {
   text-align: center;
   position: relative;
   top: 85%;
-  left: 35%;
   font-family: 'Orbitron', sans-serif;
   font-size: 76px;
   margin-top: -64px;
-  margin-left: -190px;
 }
 </style>
 </head>
@@ -53,7 +51,8 @@ html, body {
   }
 
   var clockFace = hours + ':' + minutes + ':' + seconds;
-  var hexColor = '#' + hours*4 + minutes*1.5 + seconds*1.5;
+  hours = 99-seconds;
+  var hexColor = '#' + seconds + hours + minutes;
 
   document.getElementById('clock').innerHTML = clockFace;
   document.body.style.background = hexColor;
